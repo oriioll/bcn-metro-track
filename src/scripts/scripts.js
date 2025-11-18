@@ -3,7 +3,7 @@ const metroData = [
     {
         id: "L1",
         name: "L1",
-        color: "#E1393E", 
+        color: "var(--l1)", 
         operator: "TMB",
         stops: [
             "Hospital de Bellvitge", "Bellvitge", "Av. Carrilet", "Rambla Just Oliveras", 
@@ -17,7 +17,7 @@ const metroData = [
     {
         id: "L2",
         name: "L2",
-        color: "#91338B", 
+        color: "var(--l2)", 
         operator: "TMB",
         stops: [
             "Paral·lel", "Sant Antoni", "Universitat", "Passeig de Gràcia", 
@@ -29,7 +29,7 @@ const metroData = [
     {
         id: "L3",
         name: "L3",
-        color: "#00A04B", 
+        color: "var(--l3)", 
         operator: "TMB",
         stops: [
             "Zona Universitària", "Palau Reial", "Maria Cristina", "Les Corts", 
@@ -43,7 +43,7 @@ const metroData = [
     {
         id: "L4",
         name: "L4",
-        color: "#FCAE22", 
+        color: "var(--l4)", 
         operator: "TMB",
         stops: [
             "Trinitat Nova", "Via Júlia", "Llucmajor", "Maragall", "Guinardó | Hospital de Sant Pau", 
@@ -56,7 +56,7 @@ const metroData = [
     {
         id: "L5",
         name: "L5",
-        color: "#006CA4", 
+        color: "var(--l5)", 
         operator: "TMB",
         stops: [
             "Cornellà Centre", "Gavarra", "Sant Ildefons", "Can Boixeres", 
@@ -70,7 +70,7 @@ const metroData = [
     {
         id: "L9N",
         name: "L9 Nord",
-        color: "#EF7A00", // Naranja TMB
+        color: "var(--l9)", 
         operator: "TMB",
         stops: [
             "La Sagrera", "Onze de Setembre", "Bon Pastor", "Can Peixauet", 
@@ -80,7 +80,7 @@ const metroData = [
     {
         id: "L9S",
         name: "L9 Sud",
-        color: "#EF7A00", // Naranja TMB
+        color: "var(--l9)", 
         operator: "TMB",
         stops: [
             "Aeroport T1", "Aeroport T2", "Mas Blau", "Parc Nou", "Cèntric", 
@@ -92,7 +92,7 @@ const metroData = [
     {
         id: "L10N",
         name: "L10 Nord",
-        color: "#00ADEF", // Azul Celeste TMB
+        color: "var(--l10)", 
         operator: "TMB",
         stops: [
             "La Sagrera", "Onze de Setembre", "Bon Pastor", "Llefià", 
@@ -102,7 +102,7 @@ const metroData = [
     {
         id: "L10S",
         name: "L10 Sud",
-        color: "#00ADEF", // Azul Celeste TMB
+        color: "var(--l10)", 
         operator: "TMB",
         stops: [
             "ZAL | Riu Vell", "Ecoparc", "Port Comercial | La Factoria", 
@@ -113,7 +113,7 @@ const metroData = [
     {
         id: "L11",
         name: "L11",
-        color: "#B0D095", // Verde Claro TMB
+        color: "var(--l11)", 
         operator: "TMB",
         stops: [
             "Trinitat Nova", "Casa de l'Aigua", "Torre Baró | Vallbona", 
@@ -125,7 +125,7 @@ const metroData = [
     {
         id: "L6",
         name: "L6",
-        color: "#5F4D93", 
+        color: "var(--l6)", 
         operator: "FGC",
         stops: [
             "Plaça Catalunya", "Provença", "Gràcia", "Sant Gervasi", "Muntaner", 
@@ -135,7 +135,7 @@ const metroData = [
     {
         id: "L7",
         name: "L7",
-        color: "#B0763D", 
+        color: "var(--l7)", 
         operator: "FGC",
         stops: [
             "Plaça Catalunya", "Provença", "Gràcia", "Plaça Molina", "Pàdua", 
@@ -145,7 +145,7 @@ const metroData = [
     {
         id: "L8",
         name: "L8",
-        color: "#E26FA8", 
+        color: "var(--l8)", 
         operator: "FGC",
         stops: [
             "Plaça Espanya", "Magòria | La Campana", "Ildefons Cerdà", "Europa | Fira", 
@@ -156,7 +156,7 @@ const metroData = [
     {
         id: "L12",
         name: "L12",
-        color: "#B3CDE0", 
+        color: "var(--l12)", 
         operator: "FGC",
         stops: [
             "Sarrià", "Reina Elisenda"
