@@ -3,7 +3,7 @@ const metroData = [
   {
     id: "L1",
     name: "L1",
-    color: "var(--l1)",
+    color: "var(--L1)",
     operator: "TMB",
     stops: [
       "Hospital de Bellvitge",
@@ -41,7 +41,7 @@ const metroData = [
   {
     id: "L2",
     name: "L2",
-    color: "var(--l2)",
+    color: "var(--L2)",
     operator: "TMB",
     stops: [
       "Paral·lel",
@@ -67,7 +67,7 @@ const metroData = [
   {
     id: "L3",
     name: "L3",
-    color: "var(--l3)",
+    color: "var(--L3)",
     operator: "TMB",
     stops: [
       "Zona Universitària",
@@ -101,7 +101,7 @@ const metroData = [
   {
     id: "L4",
     name: "L4",
-    color: "var(--l4)",
+    color: "var(--L4)",
     operator: "TMB",
     stops: [
       "Trinitat Nova",
@@ -131,7 +131,7 @@ const metroData = [
   {
     id: "L5",
     name: "L5",
-    color: "var(--l5)",
+    color: "var(--L5)",
     operator: "TMB",
     stops: [
       "Cornellà Centre",
@@ -166,7 +166,7 @@ const metroData = [
   {
     id: "L9N",
     name: "L9 Nord",
-    color: "var(--l9)",
+    color: "var(--L9)",
     operator: "TMB",
     stops: [
       "La Sagrera",
@@ -183,7 +183,7 @@ const metroData = [
   {
     id: "L9S",
     name: "L9 Sud",
-    color: "var(--l9)",
+    color: "var(--L9)",
     operator: "TMB",
     stops: [
       "Aeroport T1",
@@ -206,7 +206,7 @@ const metroData = [
   {
     id: "L10N",
     name: "L10 Nord",
-    color: "var(--l10)",
+    color: "var(--L10)",
     operator: "TMB",
     stops: [
       "La Sagrera",
@@ -220,7 +220,7 @@ const metroData = [
   {
     id: "L10S",
     name: "L10 Sud",
-    color: "var(--l10)",
+    color: "var(--L10)",
     operator: "TMB",
     stops: [
       "ZAL | Riu Vell",
@@ -239,7 +239,7 @@ const metroData = [
   {
     id: "L11",
     name: "L11",
-    color: "var(--l11)",
+    color: "var(--L11)",
     operator: "TMB",
     stops: [
       "Trinitat Nova",
@@ -254,7 +254,7 @@ const metroData = [
   {
     id: "L6",
     name: "L6",
-    color: "var(--l6)",
+    color: "var(--L6)",
     operator: "FGC",
     stops: [
       "Plaça Catalunya",
@@ -270,7 +270,7 @@ const metroData = [
   {
     id: "L7",
     name: "L7",
-    color: "var(--l7)",
+    color: "var(--L7)",
     operator: "FGC",
     stops: [
       "Plaça Catalunya",
@@ -285,7 +285,7 @@ const metroData = [
   {
     id: "L8",
     name: "L8",
-    color: "var(--l8)",
+    color: "var(--L8)",
     operator: "FGC",
     stops: [
       "Plaça Espanya",
@@ -304,7 +304,7 @@ const metroData = [
   {
     id: "L12",
     name: "L12",
-    color: "var(--l12)",
+    color: "var(--L12)",
     operator: "FGC",
     stops: ["Sarrià", "Reina Elisenda"],
   },
@@ -328,14 +328,21 @@ function renderMetro(metroLine) {
     const li = document.createElement('li');
     //Add text in the li element
     li.textContent = element;
+    //Add class to li
+    li.className = "stopLi"
     //Child of ul
     stopsList.appendChild(li);
   })
+}
 
+//function to style the page and the renderized stops
+function styleWithMetro(metroLine) {
+    let lineaId = metroLine;
+    stopsList.style.color = `var(--${lineaID.toUpperCase()})`
 }
 
 //Event when selecting a Metro Line
 selector.addEventListener("change", (event) => {
   renderMetro(event.target.value);
-  styleWithMetro();
+  styleWithMetro(event.target.value);
 });

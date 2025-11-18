@@ -11,18 +11,20 @@
   --font-main: "Inter", sans-serif;
 
   /*Metro colors*/
-  --l1: #df2937;
-  --l2: #9a398d;
-  --l3: #37aa3c;
-  --l4: #fcbf00;
-  --l5: #0078bd;
-  --l6: #7487bd;
-  --l7: #b26612;
-  --l8: #e679ae;
-  --l9: #f88d00;
-  --l10: #07a0e5;
-  --l11: #b5cc57;
-  --l12: #bcb4d8;
+  --L1: #df2937;
+  --L2: #9a398d;
+  --L3: #37aa3c;
+  --L4: #fcbf00;
+  --L5: #0078bd;
+  --L6: #7487bd;
+  --L7: #b26612;
+  --L8: #e679ae;
+  --L9S: #f88d00;
+  --L10N: #07a0e5;
+  --L9N: #f88d00;
+  --L10S: #07a0e5;
+  --L11: #b5cc57;
+  --L12: #bcb4d8;
 }
 
 * {
@@ -38,6 +40,7 @@ body {
     var(--bg-primary) 0%,
     var(--bg-darker) 100%
   );
+  opacity: 1;
   min-height: 100vh;
   width: 100%;
   font-family: var(--font-main);
@@ -102,6 +105,7 @@ main {
   align-items: center;
   text-align: center;
   box-shadow: 0.5px 0.5px 10px var(--text-secondary);
+  padding: 20px;
 }
 
 section {
@@ -147,14 +151,27 @@ select {
 main section select::after {
   content: "▼";
 }
+
 /*UL - LI Metro stops*/
 main section ul li {
   font-weight: bold;
   list-style-type: disc;
   font-size: 1.2rem;
+  text-align: left;
+  padding: 5px;
+}
+main section ul {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    height: 100%;
+    width: 100%;
+    align-items: flex-start;
 }
 .stopsSection {
   min-height: 60vh;
+  width: 20%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -166,13 +183,13 @@ main section ul li {
   main section select {
     width: 270px;
     height: 45px;
-    font-size: .6rem;
+    font-size: 0.6rem;
   }
   header {
-    font-size: .9rem;
+    font-size: 0.9rem;
   }
   header h2 {
-    font-size: .7rem;
+    font-size: 0.7rem;
   }
   main {
     width: 90%;
