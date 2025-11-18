@@ -159,6 +159,7 @@ main section ul li {
   font-size: 1.2rem;
   text-align: left;
   padding: 5px;
+  color: var(--line-color);
 }
 main section ul {
     display: flex;
@@ -196,5 +197,11 @@ main section ul {
   }
   footer {
     font-size: 1rem;
+  }
+  main section ul {
+    display: block;
+  }
+  .stopsSection {
+    width: 80%;
   }
 }
