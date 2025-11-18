@@ -122,10 +122,10 @@ main section select {
   color: var(--text-main);
 }
 
-
 main section select:hover {
   border: solid 4px var(--accent-ui);
   transform: scale(1.02);
+  cursor: pointer;
 }
 
 main section select:focus {
@@ -134,12 +134,24 @@ main section select:focus {
   transform: scale(1.02);
 }
 
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  font-weight: bold;
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  text-align: center;
+}
+
+main section select::after {
+  content: "▼";
+}
 /*UL - LI Metro stops*/
 main section ul li {
   font-weight: bold;
   list-style-type: disc;
   font-size: 1.2rem;
-
 }
 .stopsSection {
   min-height: 60vh;
@@ -151,16 +163,21 @@ main section ul li {
 }
 
 @media (max-width: 450px) {
-  main section input {
-    width: 150px;
+  main section select {
+    width: 270px;
+    height: 45px;
+    font-size: .6rem;
   }
   header {
-    font-size: 1rem;
+    font-size: .9rem;
   }
   header h2 {
-    font-size: 0.9rem;
+    font-size: .7rem;
   }
   main {
     width: 90%;
+  }
+  footer {
+    font-size: 1rem;
   }
 }
