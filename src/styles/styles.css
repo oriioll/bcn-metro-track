@@ -1,0 +1,91 @@
+:root {
+    --bg-primary: #1D1D1D;      
+    --bg-darker: #151515;       
+    --bg-secondary: #2D2D2D;  
+    
+    --text-main: #EEEEEE;      
+    --text-secondary: #999999; 
+    
+    --accent-ui: #FFD700;       
+    
+    --font-main: 'Inter', sans-serif; 
+
+    /*Metro colors*/
+    --l1: #DF2937;
+    --l2: #9A398D;
+    --l3: #37AA3C;
+    --l4: #FCBF00;
+    --l5: #0078BD;
+    --l6: #7487BD;
+    --l7: #B26612;
+    --l8: #E679AE; 
+    --l9: #F88D00;
+    --l10: #07A0E5;
+    --l11: #B5CC57;
+    --l12: #BCB4D8;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Body layout*/
+body {
+    background: linear-gradient(145deg, var(--bg-primary) 0%, var(--bg-darker) 100%);
+    min-height: 100vh;
+    width: 100%;
+    font-family: var(--font-main);
+    color: var(--text-main); 
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: blue;
+    justify-content: flex-start;
+}
+
+/*Header and Footer layout*/
+header,
+footer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 1.4rem;
+  padding: 10px;
+  text-align: center;
+  animation: fadeInDown 0.6s ease-in-out;
+}
+
+header {
+  height: 15vh;
+  background-color: red;
+}
+
+footer {
+  height: 10vh;
+}
+
+header h2 {
+  font-size: 1.2rem;
+}
+
+footer a {
+  text-decoration: none;
+  color: var(--text-primary);
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+footer a:hover {
+  transform: scale(1.05);
+  filter: brightness(1.5);
+}
+
+/*Main container*/
+main {
+    min-height: 75vh;
+}

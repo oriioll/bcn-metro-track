@@ -59,7 +59,7 @@ const metroData = [
     },
     // ... other lines ...
 ];
-
+```
 ### How it Works
 The user selects a line from the control panel.
 
