@@ -340,7 +340,7 @@ function styleWithMetro(metroLine) {
     let lineaId = metroLine;
     const cssColor = `var(--${lineaId.toUpperCase()})`;
     //Creates a CSS variable with the line color depending on the seleccioned line. Use it as a CSS variable in CSS file
-    stopsList.style.setProperty('--line-color', cssColor);
+    document.body.style.setProperty('--line-color', cssColor);
 }
 
 //Event when selecting a Metro Line
