@@ -47,6 +47,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
+  gap: 10px;
 }
 
 /*Header and Footer layout*/
@@ -61,6 +62,7 @@ footer {
   padding: 10px;
   text-align: center;
   animation: fadeInDown 0.6s ease-in-out;
+  gap: 10px;
 }
 
 header {
@@ -103,17 +105,66 @@ main {
 }
 
 section {
-    width: 100%;    
+  width: 100%;
 }
 
+/*Input Styles*/
 main section input {
-    width: 33%;
-    height: 50px;
-    border-radius: 10px;
-    border: none;
+  width: 300px;
+  height: 50px;
+  border-radius: 10px;
+  border: none;
+  font-family: var(--font-main);
+  padding: 10px;
+  border: solid 4px transparent;
+  transition: all 0.3s ease;
+  background-color: var(--bg-darker);
+  color: var(--text-main);
 }
 main section input::placeholder {
-    font-family: var(--font-main);
-    font-weight: bold;
-    padding: 10px;
+  font-family: var(--font-main);
+  font-weight: bold;
+  color: var(--text-secondary);
+}
+
+main section input:hover {
+  border: solid 4px var(--accent-ui);
+  transform: scale(1.02);
+}
+
+main section input:focus {
+  outline: none;
+  border: solid 4px var(--accent-ui);
+  transform: scale(1.02);
+}
+
+/*UL - LI Metro stops*/
+main section ul li {
+  font-weight: bold;
+  list-style-type: disc;
+  font-size: 1.2rem;
+
+}
+.stopsSection {
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 20px;
+}
+
+@media (max-width: 450px) {
+  main section input {
+    width: 150px;
+  }
+  header {
+    font-size: 1rem;
+  }
+  header h2 {
+    font-size: 0.9rem;
+  }
+  main {
+    width: 90%;
+  }
 }
