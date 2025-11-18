@@ -15,11 +15,38 @@
   <body>
     <header>
       <h1>BCN Metro Tracker</h1>
-      <h2>
-        Select the metro line you want to check
-      </h2>
+      <h2>Select the metro line you want to check</h2>
     </header>
-    <main></main>
+    <main>
+      <section>
+        <input
+          type="text"
+          id="line-input"
+          list="line-options"
+          placeholder="Type or select a Metro Line"
+        />
+        <datalist id="line-options">
+          <option value="L1"></option>
+          <option value="L2"></option>
+          <option value="L3"></option>
+          <option value="L4"></option>
+          <option value="L5"></option>
+          <option value="L6"></option>
+          <option value="L7"></option>
+          <option value="L8"></option>
+          <option value="L9 - Nord"></option>
+          <option value="L9 - Sud"></option>
+          <option value="L10 - Nord"></option>
+          <option value="L10 - Sud"></option>
+          <option value="L11"></option>
+          <option value="L12"></option>
+        </datalist>
+      </section>
+      <section>
+        <ul class="stops" id="stops">
+        </ul>
+      </section>
+    </main>
     <footer>
       <a
         rel="noopener noreferrer"
