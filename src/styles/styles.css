@@ -51,7 +51,7 @@ body {
   align-items: center;
   justify-content: flex-start;
   gap: 10px;
-  background: url(../assets/bg2.png) no-repeat center;
+  background: url(../assets/bg2.webp) no-repeat center;
   background-size: cover;
 }
 body::before {
