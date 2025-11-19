@@ -59,10 +59,9 @@ body::before {
   content: "";
   position: absolute;
   inset: 0;
-  background-color: rgba(0, 0, 0, .8); /* Ajusta la opacidad aquí */
+  background-color: rgba(0, 0, 0, 0.8); /* Ajusta la opacidad aquí */
   z-index: -1;
 }
-
 
 /*Header and Footer layout*/
 header,
@@ -196,6 +195,15 @@ main section ul {
   padding-top: 20px;
 }
 
+.importantStop {
+  color: var(--accent-ui);
+  font-weight: bolder;
+  filter: brightness(1.5);
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+  text-underline-offset: 5px;
+}
+
 @media (max-width: 450px) {
   main section select {
     width: 270px;
@@ -220,5 +228,4 @@ main section ul {
   .stopsSection {
     padding-left: 20px;
   }
-  
 }
