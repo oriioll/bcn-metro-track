@@ -59,7 +59,7 @@ body::before {
   content: "";
   position: absolute;
   inset: 0;
-  background-color: rgba(0, 0, 0, 0.8); /* Ajusta la opacidad aquí */
+  background-color: rgba(0, 0, 0, 0.7); /* Ajusta la opacidad aquí */
   z-index: -1;
 }
 
@@ -126,7 +126,7 @@ section {
 
 /*Input Styles*/
 main section select {
-  width: 300px;
+  width: 325px;
   height: 50px;
   border-radius: 10px;
   border: none;
@@ -192,7 +192,7 @@ main section ul {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 20px;
+  padding-top: 10px;
 }
 
 .importantStop {
@@ -203,7 +203,9 @@ main section ul {
   text-decoration-thickness: 3px;
   text-underline-offset: 5px;
 }
-
+.visually-hidden {
+  display: none;
+}
 @media (max-width: 450px) {
   main section select {
     width: 270px;
@@ -228,4 +230,57 @@ main section ul {
   .stopsSection {
     padding-left: 20px;
   }
+}
+
+/* Animations */
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scaleInFade {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.stopLi {
+  animation: fadeIn 0.6s ease-in-out forwards;
+}
+
+main {
+  animation: scaleInFade 0.6s ease-in-out forwards;
 }
