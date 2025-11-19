@@ -51,7 +51,17 @@ body {
   align-items: center;
   justify-content: flex-start;
   gap: 10px;
+  background: url(../assets/bg2.png) no-repeat center;
+  background-size: cover;
 }
+body::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, .8); /* Ajusta la opacidad aquí */
+  z-index: -1;
+}
+
 
 /*Header and Footer layout*/
 header,
@@ -79,7 +89,7 @@ footer {
 
 header h2 {
   font-size: 1.2rem;
-  color: var(--text-secondary);
+  color: var(--text-main);
 }
 
 footer a {
@@ -125,7 +135,7 @@ main section select {
   border: solid 4px transparent;
   transition: all 0.3s ease;
   background-color: var(--bg-darker);
-  color: var(--text-main);
+  color: var(--line-color);
 }
 
 main section select:hover {
