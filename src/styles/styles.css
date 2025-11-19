@@ -170,24 +170,27 @@ main section ul li {
   list-style-type: disc;
   font-size: 1.2rem;
   text-align: left;
-  padding: 5px;
+  padding: 10px;
   color: var(--line-color);
+}
+main section ul li::marker {
+  font-size: 2rem;
 }
 main section ul {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  justify-content: flex-start;
+  justify-content: center;
   height: 100%;
   width: 100%;
   align-items: flex-start;
 }
 .stopsSection {
   min-height: 60vh;
-  width: 20%;
+  width: auto;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   padding-top: 20px;
 }
@@ -213,7 +216,5 @@ main section ul {
   main section ul {
     display: block;
   }
-  .stopsSection {
-    width: 80%;
-  }
+  
 }
